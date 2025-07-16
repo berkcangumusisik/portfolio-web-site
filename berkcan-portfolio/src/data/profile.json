@@ -1,0 +1,44 @@
+{
+  "name": "Berkcan Gümüşışık",
+  "title": "Full Stack Developer",
+  "location": "Ankara, Türkiye",
+  "about": "Gazi Üniversitesi Bilgisayar ve Öğretim Teknolojileri Eğitimi Bölümünü birincilikle tamamladım. Şu anda aynı bölümde yüksek lisans yapıyorum. Full Stack Developer olarak çalışıyor, kendimi her alanda geliştirmeye çalışıyorum. Yazılım geliştirme, yeni teknolojiler öğrenme ve bilgi paylaşımı konusunda tutkuluyum.",
+  "contacts": {
+    "email": "gumusisikberkcan@gmail.com",
+    "github": "https://github.com/berkcangumusisik",
+    "linkedin": "https://www.linkedin.com/in/berkcan-gumusisik/"
+  },
+  "skills": {
+    "frontend": ["JavaScript", "HTML", "CSS", "React", "Flutter"],
+    "backend": ["Java", "Spring", "Node.js", "Express.js"],
+    "tools": ["Git", "Docker", "MongoDB", "SQL", "IntelliJ IDEA", "VS Code"]
+  },
+  "experience": [
+    {
+      "role": "Full Stack Developer",
+      "org": "",
+      "start": "",
+      "end": "",
+      "desc": "Çeşitli projelerde full stack geliştirici olarak görev aldım. Java, Spring, React ve Flutter ile uygulamalar geliştirdim."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Lisans - Bilgisayar ve Öğretim Teknolojileri Eğitimi",
+      "school": "Gazi Üniversitesi",
+      "start": "2017",
+      "end": "2021",
+      "gpa": "Bölüm birincisi"
+    },
+    {
+      "degree": "Yüksek Lisans - Bilgisayar ve Öğretim Teknolojileri Eğitimi",
+      "school": "Gazi Üniversitesi",
+      "start": "2021",
+      "end": "Devam ediyor",
+      "gpa": ""
+    }
+  ],
+  "certificates": [
+    { "title": "", "issuer": "" }
+  ]
+} 
