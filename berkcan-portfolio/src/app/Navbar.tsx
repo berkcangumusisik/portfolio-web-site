@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import MatrixBackground from "./components/MatrixBackground";
 
 const NAV_LINKS = [
   { label: "Hakkımda", href: "#about" },
@@ -12,6 +13,17 @@ const NAV_LINKS = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (open) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [open]);
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-white/80 dark:bg-zinc-900/80 backdrop-blur border-b border-zinc-200 dark:border-zinc-800 shadow-sm">
@@ -47,15 +59,19 @@ export default function Navbar() {
       {/* Mobil menü ve overlay sadece açıkken render edilir */}
       {open && (
         <div className="fixed inset-0 z-40 flex">
+          {/* Matrix arka plan */}
+          <div className="absolute inset-0 w-full h-full z-0 pointer-events-none select-none">
+            <MatrixBackground />
+          </div>
           {/* Overlay */}
           <div
-            className="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300"
+            className="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300 z-10"
             onClick={() => setOpen(false)}
             aria-hidden={!open}
           />
           {/* Mobile menu */}
           <aside
-            className="ml-auto h-full w-72 bg-white dark:bg-zinc-900 shadow-2xl z-50 flex flex-col animate-slide-in"
+            className="ml-auto h-full w-72 bg-zinc-900 dark:bg-zinc-900 shadow-2xl z-10 flex flex-col animate-slide-in"
             aria-hidden={!open}
           >
             <div className="flex items-center justify-between px-8 py-6 border-b border-zinc-200 dark:border-zinc-800">
@@ -74,7 +90,7 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="px-4 py-4 rounded-xl text-zinc-900 dark:text-white text-lg font-semibold hover:bg-blue-50 dark:hover:bg-blue-950 hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-200 text-center"
+                  className="px-4 py-4 rounded-xl text-zinc-100 dark:text-white text-lg font-semibold hover:bg-blue-50 dark:hover:bg-blue-950 hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-200 text-center"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}

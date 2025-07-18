@@ -1,5 +1,5 @@
 import { FaReact, FaPython } from "react-icons/fa";
-import { SiNextdotjs, SiDotnet, SiTailwindcss, SiAntdesign, SiMaterialdesign, SiSqlite, SiThreedotjs, SiDaisyui, SiGoogle, SiSlack, SiMoodle } from "react-icons/si";
+import { SiNextdotjs, SiDotnet, SiTailwindcss, SiAntdesign, SiMaterialdesign, SiThreedotjs, SiDaisyui, SiGoogle, SiSlack, SiMoodle } from "react-icons/si";
 import { BsFillTerminalFill } from "react-icons/bs";
 import { TbApi } from "react-icons/tb";
 import React from "react";

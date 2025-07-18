@@ -21,6 +21,7 @@ export default function MatrixBackground() {
     const chars = "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズヅブプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッンABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
     function draw() {
+      if (!ctx) return;
       ctx.fillStyle = "rgba(10,10,10,0.13)"; // more transparent
       ctx.fillRect(0, 0, width, height);
       ctx.font = `${fontSize}px monospace`;
@@ -43,6 +44,7 @@ export default function MatrixBackground() {
     animate();
 
     function handleResize() {
+      if (!canvas) return;
       width = window.innerWidth;
       height = window.innerHeight;
       canvas.width = width;

@@ -1,6 +1,5 @@
-import profile from "../../data/profile.json";
 import { FaReact, FaRobot, FaCode } from "react-icons/fa";
-import { SiNextdotjs, SiDotnet, SiTailwindcss, SiFlutter, SiPostgresql } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
 
 export default function AboutMe() {
   return (
@@ -34,7 +33,7 @@ export default function AboutMe() {
             <div className="flex flex-col items-center justify-center bg-white/70 dark:bg-zinc-800/70 rounded-xl p-6 md:p-8 shadow hover:scale-105 hover:shadow-xl transition-transform duration-200 text-center min-h-[200px]">
               <FaCode className="w-8 h-8 mb-2 text-blue-600 dark:text-blue-300" />
               <span className="text-lg md:text-xl font-bold mb-1">Full Stack Uzmanlığı</span>
-              <p className="text-gray-700 dark:text-zinc-200 text-center text-sm md:text-base">Frontend'de React, backend'de .NET Core kullanarak tam kapsamlı yazılım çözümleri üretiyorum.</p>
+              <p className="text-gray-700 dark:text-zinc-200 text-center text-sm md:text-base">Frontend&apos;de React, backend&apos;de .NET Core kullanarak tam kapsamlı yazılım çözümleri üretiyorum.</p>
             </div>
             <div className="flex flex-col items-center justify-center bg-white/70 dark:bg-zinc-800/70 rounded-xl p-6 md:p-8 shadow hover:scale-105 hover:shadow-xl transition-transform duration-200 text-center min-h-[200px]">
               <FaReact className="w-8 h-8 mb-2 text-blue-500" />
@@ -44,7 +43,7 @@ export default function AboutMe() {
             <div className="flex flex-col items-center justify-center bg-white/70 dark:bg-zinc-800/70 rounded-xl p-6 md:p-8 shadow hover:scale-105 hover:shadow-xl transition-transform duration-200 text-center min-h-[200px]">
               <SiNextdotjs className="w-8 h-8 mb-2 text-zinc-800 dark:text-white" />
               <span className="text-lg md:text-xl font-bold mb-1">Performans Odaklı</span>
-              <p className="text-gray-700 dark:text-zinc-200 text-center text-sm md:text-base">Hızlı, ölçeklenebilir ve kullanıcı dostu uygulamalar geliştirmeye odaklanıyorum.</p>
+              <p className="text-gray-700 dark:text-zinc-200 text-center text-sm md:text-base">Hızlı, ölçeklenebilir ve kullanıcı dostu uygulamalar geliştir&apos;meye odaklanıyorum.</p>
             </div>
           </div>
         </div>

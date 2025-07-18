@@ -1,7 +1,6 @@
 import MatrixBackground from "./MatrixBackground";
 import { FaReact, FaPython, FaGitAlt } from "react-icons/fa";
 import { SiNextdotjs, SiTypescript, SiTailwindcss, SiHtml5, SiCss3, SiJavascript, SiDotnet, SiPostgresql, SiMysql, SiAirtable, SiFlutter, SiDart, SiGithubcopilot, SiFigma } from "react-icons/si";
-import { TbApi } from "react-icons/tb";
 import { BsFillTerminalFill } from "react-icons/bs";
 import { AiOutlineApi } from "react-icons/ai";
 

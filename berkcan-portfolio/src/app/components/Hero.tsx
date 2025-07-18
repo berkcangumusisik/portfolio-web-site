@@ -12,7 +12,7 @@ export default function Hero() {
         {profile.title}
       </span>
       <p className="text-zinc-700 dark:text-zinc-200 text-lg md:text-xl max-w-2xl mb-6 leading-relaxed text-center">
-        Modern teknolojiler ve AI araçları kullanarak etkileyici web uygulamaları geliştiren bir Full Stack Developer'ım. React, Next.js, .NET Core ve Flutter ile projeler geliştiriyor, AI destekli geliştirme süreçleriyle fark yaratıyorum.
+        Modern teknolojiler ve AI araçları kullanarak etkileyici web uygulamaları geliştiren bir Full Stack Developer&apos;ım. React, Next.js, .NET Core ve Flutter ile projeler geliştiriyor, AI destekli geliştirme süreçleriyle fark yaratıyorum.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md justify-center items-center mb-6">
         <a

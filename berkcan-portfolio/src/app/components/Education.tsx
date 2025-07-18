@@ -1,6 +1,4 @@
 import { FaUniversity, FaGraduationCap, FaUsers } from "react-icons/fa";
-import { MdSchool } from "react-icons/md";
-import { SiGoogleclassroom } from "react-icons/si";
 
 const education = [
   {
